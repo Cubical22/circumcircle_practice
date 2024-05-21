@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+      font-family: monospace;
+    }
+
+    body {
+      background-color: #1b1b1b;
+      margin-bottom: 50px;
+    }
+
+    main {
+      margin-left: 10px;
+
+      cursor: pointer;
+    }
+
+    .desc, .me {
+      background-color: rgb(163, 163, 163);
+      border: 1px solid white;
+      box-shadow: 0 0 10px 5px rgba(223, 223, 223, 0.61);
+    }
+
+    .me {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+
+      width: fit-content;
+      padding: 10px;
+    }
+
+    .desc {
+      max-width: 500px;
+
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .desc h1 {
+      padding: 10px 0;
+    }
+
+    .desc p {
+      padding: 5px 0;
+    }
+
+    .desc li {
+      padding: 2px;
+      margin-left: 20px;
+    }
+  </style>
+  <script src="./p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <section class="me">
+    <h1>Coder:</h1>
+    <p>Amir Hossain Oroujlou</p>
+    <p><span style="font-size: 0.8rem;">also known as: </span>Integral</p>
+  </section>
+  <section class="desc">
+    <h1>Circumcircle Coding Practice</h1>
+    <p>neat little thing I did ✨</p>
+    <p>click on the canvas to (re)place the points of the triangle, and see the Circumcircle update itself</p>
+    <p>couple things to consider are as followed:</p>
+    <ul>
+      <li>no placeing points on top of each other</li>
+      <li>no placing all points on a single line (since that wouldn't give you a triangle)</li>
+      <li>(wip and for now) no placing two vertical points. that makes the slope of one of the lines be infinitive in 2/3 of cases (if that line is one to be considered)</li>
+    </ul>
+    <p>the program only considers two of the tree sides to find the Circumcircle center. since all three meet up at a single point, it is not helpful to even consider the last one</p>
+  </section>
+  <main>
+  </main>
+</body>
+
+</html>
